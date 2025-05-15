@@ -1,17 +1,16 @@
-import { Shield, Zap, Award, Users } from "lucide-react"
-import { Link } from "react-router"
-import HeroSection from "./Hero-Section"
-import ProductCard from "./Product-Card"
-import CertificationBadge from "./certification-badge"
-import ESE_Lightning_Arrestors from '../assets/Product_Image/ESE Lightning Arrestors.jpg'
-import Pure_Copper_Earthing from '../assets/Product_Image/Pure Copper .jpg'
-import GI_Earthing_Electrode from '../assets/Product_Image/GI Earthing Electrode.jpg'
-import Backfill_Compound from '../assets/Product_Image/Backfill Compound.jpg'
-import ISO_9001_2015 from '../assets/Certificate/ISO_9001-2015.svg.png'
-import msme_Registration from '../assets/Certificate/msme-registration-certificate.png'
-import NABL_Registration from '../assets/Certificate/NABL_Official_LOGO_Registered.png'
-import RoHS_Registration from '../assets/Certificate/What-is-RoHS-Compliance.webp'
-
+import { Shield, Zap, Award, Users } from "lucide-react";
+import { Link } from "react-router";
+import HeroSection from "../components/Hero-Section";
+import ProductCard from "../components/Product-Card";
+import CertificationBadge from "../components/certification-badge";
+import ESE_Lightning_Arrestors from "../assets/Product_Image/ESE Lightning Arrestors.jpg";
+import Pure_Copper_Earthing from "../assets/Product_Image/Pure Copper .jpg";
+import GI_Earthing_Electrode from "../assets/Product_Image/GI Earthing Electrode.jpg";
+import Backfill_Compound from "../assets/Product_Image/Backfill Compound.jpg";
+import ISO_9001_2015 from "../assets/Certificate/ISO_9001-2015.svg.png";
+import msme_Registration from "../assets/Certificate/msme-registration-certificate.png";
+import NABL_Registration from "../assets/Certificate/NABL_Official_LOGO_Registered.png";
+import RoHS_Registration from "../assets/Certificate/What-is-RoHS-Compliance.webp";
 
 export default function Home() {
   const featuredProducts = [
@@ -31,17 +30,19 @@ export default function Home() {
     },
     {
       title: "GI Earthing Systems",
-      description: "Galvanized Iron earthing systems with CCM compound filling for enhanced performance.",
+      description:
+        "Galvanized Iron earthing systems with CCM compound filling for enhanced performance.",
       imageSrc: GI_Earthing_Electrode,
       link: "/products/earthing-solutions",
     },
     {
       title: "Backfill Compound",
-      description: "Specialized compound to reduce soil resistivity and enhance earthing system performance.",
+      description:
+        "Specialized compound to reduce soil resistivity and enhance earthing system performance.",
       imageSrc: Backfill_Compound,
       link: "/products/backfill-compound",
     },
-  ]
+  ];
 
   return (
     <>
@@ -50,7 +51,9 @@ export default function Home() {
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900">Our Featured Products</h2>
+            <h2 className="text-3xl font-bold text-gray-900">
+              Our Featured Products
+            </h2>
             <p className="mt-4 text-xl text-gray-600">
               Comprehensive range of lightning protection and earthing solutions
             </p>
@@ -84,7 +87,8 @@ export default function Home() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900">Why Choose Us</h2>
             <p className="mt-4 text-xl text-gray-600">
-              Industry-leading expertise in lightning protection and earthing solutions
+              Industry-leading expertise in lightning protection and earthing
+              solutions
             </p>
           </div>
 
@@ -94,15 +98,23 @@ export default function Home() {
                 <Shield className="h-8 w-8" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Quality Assurance</h3>
-              <p className="text-gray-600">ISO 9001:2015 certified products that meet international standards</p>
+              <p className="text-gray-600">
+                ISO 9001:2015 certified products that meet international
+                standards
+              </p>
             </div>
 
             <div className="text-center p-6">
               <div className="inline-flex items-center justify-center h-16 w-16 rounded-full bg-amber-100 text-amber-700 mb-4">
                 <Zap className="h-8 w-8" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">Advanced Technology</h3>
-              <p className="text-gray-600">Cutting-edge solutions based on the latest research and development</p>
+              <h3 className="text-xl font-semibold mb-2">
+                Advanced Technology
+              </h3>
+              <p className="text-gray-600">
+                Cutting-edge solutions based on the latest research and
+                development
+              </p>
             </div>
 
             <div className="text-center p-6">
@@ -110,7 +122,9 @@ export default function Home() {
                 <Award className="h-8 w-8" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Certified Products</h3>
-              <p className="text-gray-600">Products compliant with NFC 17-102 and IEC-62305 standards</p>
+              <p className="text-gray-600">
+                Products compliant with NFC 17-102 and IEC-62305 standards
+              </p>
             </div>
 
             <div className="text-center p-6">
@@ -118,7 +132,10 @@ export default function Home() {
                 <Users className="h-8 w-8" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Expert Support</h3>
-              <p className="text-gray-600">Dedicated team of professionals for consultation and installation</p>
+              <p className="text-gray-600">
+                Dedicated team of professionals for consultation and
+                installation
+              </p>
             </div>
           </div>
         </div>
@@ -127,8 +144,12 @@ export default function Home() {
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900">Our Certifications</h2>
-            <p className="mt-4 text-xl text-gray-600">Committed to quality and international standards</p>
+            <h2 className="text-3xl font-bold text-gray-900">
+              Our Certifications
+            </h2>
+            <p className="mt-4 text-xl text-gray-600">
+              Committed to quality and international standards
+            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -167,10 +188,12 @@ export default function Home() {
 
       <section className="py-16 bg-amber-700 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold mb-6">Ready to Protect Your Infrastructure?</h2>
+          <h2 className="text-3xl font-bold mb-6">
+            Ready to Protect Your Infrastructure?
+          </h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto">
-            Contact our team of experts for a consultation and get the best lightning protection and earthing solutions
-            for your needs.
+            Contact our team of experts for a consultation and get the best
+            lightning protection and earthing solutions for your needs.
           </p>
           <a
             href="/contact"
@@ -181,5 +204,5 @@ export default function Home() {
         </div>
       </section>
     </>
-  )
+  );
 }
