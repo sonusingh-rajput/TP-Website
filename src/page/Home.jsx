@@ -1,8 +1,8 @@
 import { Shield, Zap, Award, Users } from "lucide-react";
 import { Link } from "react-router";
 import HeroSection from "../components/Hero-Section";
-import ProductCard from "../components/Product-Card";
-import CertificationBadge from "../components/certification-badge";
+import ProductCard from "../components/ProductCard";
+import CertificationBadge from "../components/CertificationBadge";
 import ESE_Lightning_Arrestors from "../assets/Product_Image/ESE Lightning Arrestors.jpg";
 import Pure_Copper_Earthing from "../assets/Product_Image/Pure Copper .jpg";
 import GI_Earthing_Electrode from "../assets/Product_Image/GI Earthing Electrode.jpg";
