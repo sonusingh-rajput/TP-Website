@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { Menu, X, ChevronDown } from "lucide-react"
 import Logo from "../assets/LogoTP.png"
+import { Link } from "react-router"
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -21,16 +22,16 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
-            <a href="/" className="flex-shrink-0 flex items-center">
+            <Link to="/" className="flex-shrink-0 flex items-center">
               <img src={Logo} className="w-12" />
               <span className="ml-2 text-gray-800 font-semibold">Lightning & Earthing</span>
-            </a>
+            </Link>
           </div>
 
           <div className="hidden md:flex items-center space-x-8">
-            <a href="/" className="text-gray-700 hover:text-blue-700 font-medium">
+            <Link to="/" className="text-gray-700 hover:text-blue-700 font-medium">
               Home
-            </a>
+            </Link>
 
             <div className="relative">
               <button
@@ -43,54 +44,54 @@ const Navbar = () => {
               {isProductsOpen && (
                 <div className="absolute left-0 mt-2 w-64 bg-white rounded-md shadow-lg z-50">
                   <div className="py-1">
-                    <a
-                      href="/products/lightning-protection"
+                    <Link
+                      to="/products/lightning-protection"
                       className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50"
                     >
                       Lightning Protection
-                    </a>
-                    <a
-                      href="/products/earthing-solutions"
+                    </Link>
+                    <Link
+                      to="/products/earthing-solutions"
                       className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50"
                     >
                       Earthing Solutions
-                    </a>
-                    <a
-                      href="/products/backfill-compound"
+                    </Link>
+                    <Link
+                      to="/products/backfill-compound"
                       className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50"
                     >
                       Backfill Compound
-                    </a>
-                    <a
-                      href="/products/earth-pit-covers"
+                    </Link>
+                    <Link
+                      to="/products/earth-pit-covers"
                       className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50"
                     >
                       Earth Pit Covers
-                    </a>
+                    </Link>
                   </div>
                 </div>
               )}
             </div>
 
-            <a href="/about" className="text-gray-700 hover:text-blue-700 font-medium">
+            <Link to="/about" className="text-gray-700 hover:text-blue-700 font-medium">
               About Us
-            </a>
+            </Link>
 
-            <a href="/industries" className="text-gray-700 hover:text-blue-700 font-medium">
+            <Link to="/industries" className="text-gray-700 hover:text-blue-700 font-medium">
               Industries
-            </a>
+            </Link>
 
-            <a href="/certifications" className="text-gray-700 hover:text-blue-700 font-medium">
+            <Link to="/certifications" className="text-gray-700 hover:text-blue-700 font-medium">
               Certifications
-            </a>
+            </Link>
 
-            <a href="/clients" className="text-gray-700 hover:text-blue-700 font-medium">
+            <Link to="/clients" className="text-gray-700 hover:text-blue-700 font-medium">
               Clients
-            </a>
+            </Link>
 
-            <a href="/contact" className="text-gray-700 hover:text-blue-700 font-medium">
+            <Link to="/contact" className="text-gray-700 hover:text-blue-700 font-medium">
               Contact
-            </a>
+            </Link>
           </div>
 
           <div className="md:hidden flex items-center">
@@ -107,9 +108,9 @@ const Navbar = () => {
       {isOpen && (
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <a href="/" className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-700">
+            <Link to="/" className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-700">
               Home
-            </a>
+            </Link>
 
             <button
               onClick={toggleProducts}
@@ -120,58 +121,58 @@ const Navbar = () => {
 
             {isProductsOpen && (
               <div className="pl-6 space-y-1">
-                <a
-                  href="/products/lightning-protection"
+                <Link
+                  to="/products/lightning-protection"
                   className="block px-3 py-2 text-sm text-gray-700 hover:text-blue-700"
                 >
                   Lightning Protection
-                </a>
-                <a
-                  href="/products/earthing-solutions"
+                </Link>
+                <Link
+                  to="/products/earthing-solutions"
                   className="block px-3 py-2 text-sm text-gray-700 hover:text-blue-700"
                 >
                   Earthing Solutions
-                </a>
-                <a
-                  href="/products/backfill-compound"
+                </Link>
+                <Link
+                  to="/products/backfill-compound"
                   className="block px-3 py-2 text-sm text-gray-700 hover:text-blue-700"
                 >
                   Backfill Compound
-                </a>
-                <a
-                  href="/products/earth-pit-covers"
+                </Link>
+                <Link
+                  to="/products/earth-pit-covers"
                   className="block px-3 py-2 text-sm text-gray-700 hover:text-blue-700"
                 >
                   Earth Pit Covers
-                </a>
+                </Link>
               </div>
             )}
 
-            <a href="/about" className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-700">
+            <Link to="/about" className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-700">
               About Us
-            </a>
+            </Link>
 
-            <a
-              href="/industries"
+            <Link
+              to="/industries"
               className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-700"
             >
               Industries
-            </a>
+            </Link>
 
-            <a
-              href="/certifications"
+            <Link
+              to="/certifications"
               className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-700"
             >
               Certifications
-            </a>
+            </Link>
 
-            <a href="/clients" className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-700">
+            <Link to="/clients" className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-700">
               Clients
-            </a>
+            </Link>
 
-            <a href="/contact" className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-700">
+            <Link to="/contact" className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-700">
               Contact
-            </a>
+            </Link>
           </div>
         </div>
       )}
